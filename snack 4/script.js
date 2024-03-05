@@ -23,7 +23,7 @@ let people =
     {
         nome: "Salmo",
         cognome: "Lebon",
-        eta: 666,
+        eta: 66,
     },
 ];
 
@@ -32,11 +32,11 @@ let adultAge = people.map(function(person)
 {
     if (person.eta >= 18)
     {
-        return people.push(adult = "yes");
+        return true;
     }
     else
     {
-        return people.push(adult = "nope");
+        return false;
     }
 });
 
