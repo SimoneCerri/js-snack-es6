@@ -55,7 +55,6 @@ console.log(adultAge);
 console.log(people);
 
 //make a try to add directly a new key in the old array "people"
-
 let eligible = people.map(function (person)
 {
     if (person.eta >= 18)
@@ -65,5 +64,18 @@ let eligible = people.map(function (person)
     else
     {
         return person.eligible = "nope";
+    }
+});
+
+//play in console
+people.filter(function(person)
+{
+    if (person.eligible == "yes")
+    {
+        console.log(`${person.nome} ${person.cognome} is eligible for take driving license, age : ${person.eta}`);
+    }
+    else
+    {
+        console.log(`${person.nome} ${person.cognome} is too young for take driving license, age : ${person.eta}`);
     }
 });
