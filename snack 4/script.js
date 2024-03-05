@@ -31,11 +31,11 @@ let adultAge = people.map(function(person)
 {
     if (person.eta >= 18)
     {
-        return ("Mr/Mss " + person.nome + person.cognome + " is eligible to drive");
+        return ("Mr/Mss " + person.nome + " " + person.cognome + " is eligible for driving");
     }
     else
     {
-        return ("Mr/Mss " + person.nome + "" + person.cognome + " can't drive yet, too young !");
+        return ("Mr/Mss " + person.nome + " " + person.cognome + " can't drive yet, too young !");
     }
 });
 
@@ -52,3 +52,18 @@ let adultAge = people.map(function(person)
 }); */
 
 console.log(adultAge);
+console.log(people);
+
+//make a try to add directly a new key in the old array "people"
+
+let eligible = people.map(function (person)
+{
+    if (person.eta >= 18)
+    {
+        return person.eligible = "yes";
+    }
+    else
+    {
+        return person.eligible = "nope";
+    }
+});
