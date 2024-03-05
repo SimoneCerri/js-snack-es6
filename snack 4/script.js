@@ -27,8 +27,19 @@ let people =
     },
 ];
 
-
 let adultAge = people.map(function(person)
+{
+    if (person.eta >= 18)
+    {
+        return ("Mr/Mss " + person.nome + person.cognome + " is eligible to drive");
+    }
+    else
+    {
+        return ("Mr/Mss " + person.nome + "" + person.cognome + " can't drive yet, too young !");
+    }
+});
+
+/* let adultAge = people.forEach(person =>
 {
     if (person.eta >= 18)
     {
@@ -38,6 +49,6 @@ let adultAge = people.map(function(person)
     {
         return false;
     }
-});
+}); */
 
 console.log(adultAge);
