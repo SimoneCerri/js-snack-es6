@@ -59,3 +59,7 @@ pumpkins.forEach(function(pumpkin)
 });
 
 console.log(sum);
+
+//arrow
+/* pumpkins.forEach(pumpkin => sum += pumpkin.weigth);
+console.log(sum); */
