@@ -5,6 +5,6 @@ function reverseString(str)
     console.log(reversedString);
 }
 
-reverseString("ciao")
+reverseString("Ciao");
 
 //broh i just google it...
