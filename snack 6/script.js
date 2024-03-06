@@ -63,4 +63,12 @@ teams.map(function(team)
 });
 console.log(teams);
 
-let {}
+/* let {points, goals} = teams
+console.log(points,goals); */
+
+//...rest
+//...spread
+
+/* let prova = {...teams, name, goals}
+console.log(prova); */
+
